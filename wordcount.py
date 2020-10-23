@@ -45,13 +45,13 @@ def create_word_dict(filename):
 
 def print_words(filename):
     """Prints one per line '<word> : <count>', sorted
-    by word for the given file.""" 
+    by word for the given file."""
     new_dict = create_word_dict(filename)
     dict_items = new_dict.items()
     sorted_items = sorted(dict_items)
     for word in sorted_items:
         print(word[0] + ' : ' + str(word[1]))
-  
+
 
 def print_top(filename):
     """Prints the top count listing for the given file."""
